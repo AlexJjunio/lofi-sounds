@@ -9,16 +9,10 @@
 }
 
 body {
-  background-color: #0F172A;
+  background-color: #2B3467;
   color: white;
   
   font-size: 1.6rem;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  
 }
 
 main {
@@ -37,17 +31,43 @@ main h1 {
   line-height: 200%;
 }
 
-.cards {
+.container {
   padding: 32px 40px;
-  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
 
-.card {
-  height: 260px;
-  width: 100%;
+.card{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card::before{
+  content: '';
+  width: 150px;
+  height: 800px;
+  left: 60px;  
+  top: -120px;
+  background: linear-gradient(#fff,#BAD7E9);
+  position: absolute;
+  animation: animate 8s linear infinite;
+}
+
+
+@keyframes animate{
+  0%{
+      transform: rotate(0deg);
+  }
+
+  100%{
+      transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 1020px) {
@@ -59,7 +79,7 @@ main h1 {
     font-size: 4.8rem;
   }
 
-  .cards {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -81,4 +101,117 @@ main h1 {
   .card {
     height: 160px;
   }
+}
+
+.car-01::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.car-02::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.car-03::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.car-04::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.car-05::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-05.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.car-06::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.car-07::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-07.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.car-08::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-08.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.car-09::after{
+  content:'';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(/image/car-09.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.selected-card {
+  opacity: 40%;
+  transition: 300ms;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.enter-card {
+  opacity: 40%;
+  transition: 300ms;
+  scale: 1.05;
 }
