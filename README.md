@@ -1,4 +1,4 @@
-# Beats-to-relax
+# Aguarde o carregamento do gif para ter um preview da aplicação...
 
 Ouça músicas lo-fi de forma prática enquanto estuda.
 
