@@ -4,7 +4,7 @@ A seguinte aplicação foi desenvolvida para reforçar a responsividade de aplic
 
 
 
-![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/beats-to-relax.gif)
+![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/preview.gif)
 
 
 
