@@ -1,10 +1,9 @@
-# Beats-to-relax
+# Aguarde o carregamento da página para ter um preview da aplicação...
 
-A seguinte aplicação foi desenvolvida para reforçar a responsividade de aplicações web, com conceitos como, grid-layout e flex-box.
+Ouça músicas lo-fi de forma prática enquanto estuda.
 
 
-
-![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/beats-to-relax.gif)
+![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/preview.gif)
 
 
 
