@@ -400,6 +400,18 @@ footer svg {
   transition: transform 100ms;
 }
   
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 7px;
+  background: #222;
+  border-radius: 5px;
+}
 
-
-
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+}
