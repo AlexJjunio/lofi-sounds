@@ -34,13 +34,15 @@ main h1 {
 .container {
   padding: 32px 40px;
   display: grid;
+  /* place-items: center; */
+  margin: auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
 
 .card{
-  height: 300px;
-  width: 300px;
+  /* max-width: 300px; */
+  min-width: 150px;
   position: relative;
   place-items: center;
   overflow: hidden;
@@ -100,6 +102,13 @@ main h1 {
 
   .card {
     height: 160px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
   }
 }
 
@@ -213,5 +222,5 @@ main h1 {
 .enter-card {
   opacity: 40%;
   transition: 300ms;
-  scale: 1.05;
+  scale: 1.03;
 }
