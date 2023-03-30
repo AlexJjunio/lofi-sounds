@@ -65,3 +65,5 @@ for (let index = 0; index < afterCards.length; index++) {
     }
   });
 }
+
+

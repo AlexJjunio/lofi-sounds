@@ -108,6 +108,18 @@ main h1 {
   scroll-snap-type: y mandatory;
 }
 
+.vol {
+  position: fixed;
+  right: 40px;
+  bottom: 22px;
+  cursor: pointer;
+}
+
+.vol:hover {
+  opacity: 40%;
+  transform: scale(1.05);
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -210,6 +222,14 @@ main h1 {
 
   .efeito-vidro {
     height: 65px;
+  }
+
+  .vol {
+    position: absolute;
+  }
+
+  main {
+    position: relative;
   }
 
 }
@@ -351,7 +371,7 @@ footer svg {
   opacity: 80%;
   transition: transform 100ms;
 }
-
+  
 
 
 
