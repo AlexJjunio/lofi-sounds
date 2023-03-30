@@ -156,7 +156,7 @@ main h1 {
   top: -120px;
   background: linear-gradient(#fff, #BAD7E9);
   position: absolute;
-  animation: animate 8s linear infinite;
+  animation: animate 15s linear infinite;
 }
 
 
@@ -231,7 +231,6 @@ main h1 {
   main {
     position: relative;
   }
-
 }
 
 footer {
@@ -251,7 +250,36 @@ footer svg {
   width: 24px;
 }
 
+.slider {
+  /* position: fixed;
+  bottom: 20px;
+  right: 40px; */
+  transform: rotate(180deg);
+  rotate: 90deg; 
+  width: 100px;
+  display: none;
+  cursor: grab;
+}
 
+.icon-sound {
+  /* position: fixed;
+  bottom: 20px;
+  right: 40px; */
+  width: 24px;
+  margin-top: 50px;
+  cursor: grab;
+}
+
+.div-icon-sound {
+  position: fixed;
+  bottom: 10px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+}
 
 .car-01::after {
   content: '';

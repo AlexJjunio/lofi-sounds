@@ -47,10 +47,11 @@ function mouseEnteredAndOut() {
 
 mouseEnteredAndOut()
 
+const audioFiles = soundFiles.map(file => new Audio(`assets/lofi-sounds/${file}`));
 
 let currentSound = null;
 for (let index = 0; index < afterCards.length; index++) {
-  const soundsSRC = new Audio(`assets/lofi-sounds/${soundFiles[index]}`);
+  const soundsSRC = audioFiles[index];
   afterCards[index].addEventListener('click', () => {
     if (currentSound && currentSound !== soundsSRC) {
       currentSound.pause();
@@ -66,4 +67,29 @@ for (let index = 0; index < afterCards.length; index++) {
   });
 }
 
+const iconSound = document.querySelector('.icon-sound');
+const slider = document.querySelector('.slider');
+const divSlider = document.querySelector('.div-icon-sound')
 
+divSlider.addEventListener('mouseenter', () => {
+  soundMouseEnter()
+})
+
+divSlider.addEventListener('mouseleave', () => {
+  soundMouseLeave();
+});
+
+function soundMouseEnter() {
+  slider.style.display = 'block';
+}
+
+function soundMouseLeave() {
+  slider.style.display = 'none';
+}
+
+audioFiles.forEach((audioFile) => {
+  slider.addEventListener('input', () => {
+    let { value } = slider
+    audioFile.volume = value / 100
+  })
+})
