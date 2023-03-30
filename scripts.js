@@ -1,4 +1,14 @@
-// Efeitos de click do card
+const soundFiles = [
+  'lofi1.mp3',
+  'lofi2.mp3',
+  'lofi3.mp3',
+  'lofi4.mp3',
+  'lofi5.mp3',
+  'lofi6.mp3',
+  'lofi7.mp3',
+  'lofi8.mp3',
+  'lofi9.mp3'
+]
 
 const afterCards = document.querySelectorAll("[class^='car']");
 
@@ -19,7 +29,6 @@ afterCards.forEach(function(item) {
   });
 });
 
-// Efeitos de hover do card
 
 function mouseOut() {
   this.classList.remove('enter-card')
@@ -38,3 +47,21 @@ function mouseEnteredAndOut() {
 
 mouseEnteredAndOut()
 
+
+let currentSound = null;
+for (let index = 0; index < afterCards.length; index++) {
+  const soundsSRC = new Audio(`assets/lofi-sounds/${soundFiles[index]}`);
+  afterCards[index].addEventListener('click', () => {
+    if (currentSound && currentSound !== soundsSRC) {
+      currentSound.pause();
+    }
+    if (soundsSRC.paused) {
+      soundsSRC.loop = true
+      soundsSRC.play();
+      currentSound = soundsSRC;
+    } else {
+      soundsSRC.pause();
+      currentSound = null;
+    }
+  });
+}

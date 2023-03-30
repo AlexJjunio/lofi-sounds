@@ -78,6 +78,10 @@ main h1 {
   color: #222;
 }
 
+.title p {
+  letter-spacing: 1px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -86,12 +90,12 @@ main h1 {
 
 .logo svg {
   cursor: pointer;
+  transition: transform 100ms;
 }
 
 .logo svg:hover {
   opacity: 40%;
-  transition: 100ms;
-  scale: 1.03;
+  transform: scale(1.05);
 }
 
 .container {
@@ -220,6 +224,7 @@ footer {
 footer p {
   color: #222;
   font-family: 'Edu NSW ACT Foundation', cursive;
+  letter-spacing: 1px;
 }
 
 footer svg {
@@ -337,16 +342,14 @@ footer svg {
 }
 
 .selected-card {
-  opacity: 40%;
-  transition: 300ms;
+  opacity: 80%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
 .enter-card {
-  opacity: 40%;
-  transition: 300ms;
-  scale: 1.03;
+  opacity: 80%;
+  transition: transform 100ms;
 }
 
 
