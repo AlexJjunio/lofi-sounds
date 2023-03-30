@@ -235,6 +235,7 @@ main h1 {
 
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -272,7 +273,7 @@ footer svg {
 
 .div-icon-sound {
   position: fixed;
-  bottom: 10px;
+  bottom: 15px;
   left: 0px;
   display: flex;
   flex-direction: column;
