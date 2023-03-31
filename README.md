@@ -3,7 +3,7 @@
 Ouça músicas lo-fi de forma prática enquanto estuda.
 
 
-![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/preview.gif)
+![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/preview.png)
 
 
 
