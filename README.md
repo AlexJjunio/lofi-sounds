@@ -1,10 +1,9 @@
-# Aguarde o carregamento da página para ter um preview da aplicação...
+# Beats-to-relax
 
 Ouça músicas lo-fi de forma prática enquanto estuda.
 
 
-![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/preview.png)
-
+![App Screenshot](https://github.com/AlexJjunio/lofi-sounds/blob/main/public/preview.png)
 
 
 ## 👨‍💻 Tecnologias:

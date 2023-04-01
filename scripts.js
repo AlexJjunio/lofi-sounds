@@ -13,12 +13,12 @@ const soundFiles = [
 const afterCards = document.querySelectorAll("[class^='car']");
 
 function removeSelected() {
-  for(let i = 0; i < afterCards.length; i++) {
+  for (let i = 0; i < afterCards.length; i++) {
     afterCards[i].classList.remove('selected-card')
   }
 }
 
-afterCards.forEach(function(item) {
+afterCards.forEach(function (item) {
   item.addEventListener('click', () => {
     if (item.classList.contains('selected-card')) {
       item.classList.remove('selected-card');
