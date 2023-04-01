@@ -1,0 +1,118 @@
+.card::before {
+  content: '';
+  width: 150px;
+  height: 800px;
+  left: 60px;
+  top: -120px;
+  background: linear-gradient(#fff, #BAD7E9);
+  position: absolute;
+  animation: animate 15s linear infinite;
+}
+
+.car-01::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.car-02::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.car-03::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/2465877/pexels-photo-2465877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.car-04::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/4153146/pexels-photo-4153146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.car-05::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/3747502/pexels-photo-3747502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.car-06::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/5538599/pexels-photo-5538599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.car-07::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.car-08::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/4861373/pexels-photo-4861373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.car-09::after {
+  content: '';
+  position: absolute;
+  background: #191919;
+  inset: 5px;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
